@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper {
+        display: -webkit-flex;  /* 新版本语法: Chrome 21+ */      
+        display: -webkit-box;   /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+        display: -moz-box;      /* 老版本语法: Firefox (buggy) */
+        display: -ms-flexbox;   /* 混合版本语法: IE 10 */   
+        display: flex;  /* 新版本语法: Opera 12.1, Firefox 22+ */
+        flex-wrap:nowrap;
+        height: 300px;
+        width:100vw;
+        align-items: flex-start;
+        background-color: silver;
+        overflow-x: scroll;
+    }
+
+    .carts {
+        -webkit-box-flex: 0 0 200px;   /* OLD - iOS 6-, Safari 3.1-6 */  
+        -moz-box-flex: 0 0 200px;     /* OLD - Firefox 19- */              
+        -webkit-flex: 0 0 200px;     /* Chrome */  
+        -ms-flex: 0 0 200px;    /* IE 10 */  
+         flex: 0 0 200px;
+        flex: 0 0 200px;
+    }
+
+    .carts-title {
+        display: block;
+        font-size: 1.17em;
+        font-weight: bold;
+    }
+
+    .carts-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .carts-image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .carts-depict {
+        height: 40px;
+        font-size: xx-small;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="carts">
+            <div class="carts-title">2017-11-06</div>
+            <div class="carts-image">
+                <img src="https://cn.vuejs.org/images/logo.png" alt="没有图片">
+            </div>
+            <div class="carts-depict">
+                这一段描述这个图片的文字，字数虽然不多但是还是有差不多三十字的。
+            </div>
+        </div>
+        <div class="carts">
+            <div class="carts-title">2017-11-11</div>
+            <div class="carts-image">
+                <a href="">
+                    <img src="" alt="图片不变">
+                </a>
+            </div>
+            <div class="carts-depict">
+                这一段描述这个图片的文字，字数虽然不多但是还是有差不多三十字的。
+            </div>
+        </div>
+        <div class="carts">
+            <div class="carts-title">2017-11-13</div>
+            <div class="carts-image">
+                <a href="">
+                    <img src="https://cn.vuejs.org/images/logo.png" alt="没有图片">
+                </a>
+            </div>
+            <div class="carts-depict"></div>
+        </div>
+        <div class="carts">
+            <div class="carts-title">2017-11-13</div>
+            <div class="carts-image">
+                <a href="">
+                    <img src="https://cn.vuejs.org/images/logo.png" alt="没有图片">
+                </a>
+            </div>
+            <div class="carts-depict"></div>
+        </div>
+        <div class="carts">
+            <div class="carts-title">2017-11-13</div>
+            <div class="carts-image">
+                <a href="">
+                    <img src="https://cn.vuejs.org/images/logo.png" alt="没有图片">
+                </a>
+            </div>
+            <div class="carts-depict"></div>
+        </div>
+        <div class="carts">
+            <div class="carts-title">2017-11-13</div>
+            <div class="carts-image">
+                <a href="">
+                    <img src="https://cn.vuejs.org/images/logo.png" alt="没有图片">
+                </a>
+            </div>
+            <div class="carts-depict"></div>
+        </div>
+    </div>
+</body>
+
+</html>
